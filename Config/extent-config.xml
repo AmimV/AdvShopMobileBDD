@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<extentreports>
+	<configuration>
+		<theme>dark</theme>
+		<enconding>UTF-8</enconding>
+		<protocol>https</protocol>
+		<documentTitle>Teste Advantage Shopping - BDD</documentTitle>
+		<reportName>Teste Advantage Shopping</reportName>
+		<dateFormat>yyyy-MM-dd</dateFormat>
+		<timeFormat>HH:mm:ss</timeFormat>
+		<scripts>
+	    	<![CDATA[
+    	    	$(document).ready(function() {
+        
+       		 	});
+      		]]>
+		</scripts>
+		<styles>
+	    	<![CDATA[
+        
+      		]]>
+		</styles>
+	</configuration>
+</extentreports>
