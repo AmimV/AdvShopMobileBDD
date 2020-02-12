@@ -33,6 +33,7 @@ public class CriarConta_stepDefinition {
 	@Quando("^preencho o formulario de cadastro$")
 	public void preencho_o_formulario_de_cadastro() throws Throwable {
 		cc.Usuario();
+		cc.getUser();
 		cc.Email();
 		cc.Senha();
 		cc.ConfirmarSenha();
@@ -50,13 +51,13 @@ public class CriarConta_stepDefinition {
 	@Quando("^clico em registrar$")
 	public void clico_em_registrar() throws Throwable {
 		cc.Register();
-		hpage.Menu();
 		
 	}
 
 	@Entao("^confirmo se foi cadastrado com sucesso$")
 	public void confirmo_se_foi_cadastrado_com_sucesso() throws Throwable {
-		hpage.confirmaCadastro();
+		hpage.Menu();
+		cc.confirmaCadastro();
 	}
 
 	@Quando("^desmarco a opcao de aceitar os termos$")

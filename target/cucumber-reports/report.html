@@ -30,7 +30,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -43,7 +42,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Feb 11, 2020 11:13:34 PM</span>
+				<span class='label suite-start-time'>Feb 12, 2020, 10:50:03 AM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -65,8 +64,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -132,10 +129,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>20</span> test(s) passed</span>
+					<span><span class='strong'>23</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> test(s) failed, <span class='strong'>1</span> others
+					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -147,10 +144,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>20</span> step(s) passed</span>
+					<span><span class='strong'>23</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>2</span> step(s) failed, <span class='strong'>1</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -165,33 +162,33 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Cadastrar um usuario</span>
-						<span class='test-time'>Feb 11, 2020 11:13:34 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Feb 12, 2020, 10:50:03 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 11, 2020 11:13:34 PM</span>
-	<span class='label end-time'>Feb 11, 2020 11:15:25 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 1m 50s+403ms</span>
+	<span class='label start-time'>Feb 12, 2020, 10:50:03 AM</span>
+	<span class='label end-time'>Feb 12, 2020, 10:51:31 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 27s+851ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1  fail' status='fail' test-id='2'>
+				<li class='node level-1  pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Cadastrar um usuario com sucesso</div>						
-						<span class='node-time'>Feb 11, 2020 11:13:34 PM</span>
-						<span class='node-duration'>0h 0m 58s+280ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:03 AM</span>
+						<span class='node-duration'>0h 0m 44s+798ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Dado que estou no menu</div>						
-						<span class='node-time'>Feb 11, 2020 11:13:34 PM</span>
-						<span class='node-duration'>0h 0m 16s+7ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:03 AM</span>
+						<span class='node-duration'>0h 0m 9s+723ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -207,7 +204,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:13:50 PM</td>
+													<td class='timestamp'>10:50:13 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -218,8 +215,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando estiver na pagina de criar nova conta</div>						
-						<span class='node-time'>Feb 11, 2020 11:13:50 PM</span>
-						<span class='node-duration'>0h 0m 2s+405ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:13 AM</span>
+						<span class='node-duration'>0h 0m 1s+872ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -235,7 +232,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:13:53 PM</td>
+													<td class='timestamp'>10:50:15 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -246,8 +243,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando preencho o formulario de cadastro</div>						
-						<span class='node-time'>Feb 11, 2020 11:13:53 PM</span>
-						<span class='node-duration'>0h 0m 38s+301ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:15 AM</span>
+						<span class='node-duration'>0h 0m 28s+695ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -263,7 +260,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:14:31 PM</td>
+													<td class='timestamp'>10:50:43 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -271,12 +268,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf fail' status='fail' test-id='6'>
+				<li class='node level-2 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>E clico em registrar</div>						
-						<span class='node-time'>Feb 11, 2020 11:14:31 PM</span>
-						<span class='node-duration'>0h 0m 1s+539ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:43 AM</span>
+						<span class='node-duration'>0h 0m 0s+690ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -289,63 +286,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>11:14:33 PM</td>
-													<td class='step-details'><pre>org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RSI1593', ip: '192.168.100.208', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, databaseEnabled: false, desired: {appActivity: com.Advantage.aShopping.Spl..., appPackage: com.Advantage.aShopping, deviceName: AOSP on IA Emulator, platformName: android, platformVersion: 9, resetKeyboard: true, udid: emulator-5554, unicodeKeyboard: true}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, resetKeyboard: true, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, unicodeKeyboard: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at br.com.rsinet.hub_BDD.PageFactory.HomePage.Menu(HomePage.java:55)
-	at br.com.rsinet.hub_BDD.StepDefinition.CriarConta_stepDefinition.clico_em_registrar(CriarConta_stepDefinition.java:53)
-	at ?.E clico em registrar(CriarConta.feature:12)
-</pre></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>10:50:44 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf skip' status='skip' test-id='7'>
+				<li class='node level-2 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Entao confirmo se foi cadastrado com sucesso</div>						
-						<span class='node-time'>Feb 11, 2020 11:14:33 PM</span>
-						<span class='node-duration'>0h 0m 0s+2ms</span>
-						<span class='test-status right skip'>skip</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:44 AM</span>
+						<span class='node-duration'>0h 0m 3s+805ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -358,15 +314,15 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='skip'>
-													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-													<td class='timestamp'>11:14:33 PM</td>
-													<td class='step-details'>skipped</td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>10:50:48 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Cadastrar_um_usuario_com_sucesso11_02_2020 23.14.33.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Cadastrar_um_usuario_com_sucesso11_02_2020 23.14.33.png'></li>
+												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Cadastrar_um_usuario_com_sucesso12_02_2020 10.50.48.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Cadastrar_um_usuario_com_sucesso12_02_2020 10.50.48.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -376,16 +332,16 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-1  pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Desmarcar a opcao de confirmar os termos de cadastro e tentar finalizar o cadastro</div>						
-						<span class='node-time'>Feb 11, 2020 11:14:34 PM</span>
-						<span class='node-duration'>0h 0m 50s+382ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:49 AM</span>
+						<span class='node-duration'>0h 0m 41s+847ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Dado que estou no menu</div>						
-						<span class='node-time'>Feb 11, 2020 11:14:34 PM</span>
-						<span class='node-duration'>0h 0m 12s+642ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:49 AM</span>
+						<span class='node-duration'>0h 0m 9s+961ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -401,7 +357,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:14:47 PM</td>
+													<td class='timestamp'>10:50:59 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -412,8 +368,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando estiver na pagina de criar nova conta</div>						
-						<span class='node-time'>Feb 11, 2020 11:14:47 PM</span>
-						<span class='node-duration'>0h 0m 2s+154ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:50:59 AM</span>
+						<span class='node-duration'>0h 0m 2s+116ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -429,7 +385,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:14:49 PM</td>
+													<td class='timestamp'>10:51:01 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -440,8 +396,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando preencho o formulario de cadastro</div>						
-						<span class='node-time'>Feb 11, 2020 11:14:49 PM</span>
-						<span class='node-duration'>0h 0m 34s+572ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:01 AM</span>
+						<span class='node-duration'>0h 0m 29s+18ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -457,7 +413,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:15:24 PM</td>
+													<td class='timestamp'>10:51:30 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -468,8 +424,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
 						<div class='node-name'>E desmarco a opcao de aceitar os termos</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+577ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:30 AM</span>
+						<span class='node-duration'>0h 0m 0s+552ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -485,7 +441,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:15:24 PM</td>
+													<td class='timestamp'>10:51:31 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -496,8 +452,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Entao confirmo se e possivel realizar o cadastro</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+432ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:31 AM</span>
+						<span class='node-duration'>0h 0m 0s+196ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -513,13 +469,13 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:15:25 PM</td>
+													<td class='timestamp'>10:51:31 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Desmarcar_a_opcao_de_confirmar_os_termos_de_cadastro_e_tentar_finalizar_o_cadastro11_02_2020 23.15.25.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Desmarcar_a_opcao_de_confirmar_os_termos_de_cadastro_e_tentar_finalizar_o_cadastro11_02_2020 23.15.25.png'></li>
+												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Desmarcar_a_opcao_de_confirmar_os_termos_de_cadastro_e_tentar_finalizar_o_cadastro12_02_2020 10.51.31.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Desmarcar_a_opcao_de_confirmar_os_termos_de_cadastro_e_tentar_finalizar_o_cadastro12_02_2020 10.51.31.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -534,30 +490,30 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>Pesquisar produto atraves da home page</span>
-						<span class='test-time'>Feb 11, 2020 11:15:26 PM</span>
+						<span class='test-time'>Feb 12, 2020, 10:51:32 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 11, 2020 11:15:26 PM</span>
-	<span class='label end-time'>Feb 11, 2020 11:16:11 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+977ms</span>
+	<span class='label start-time'>Feb 12, 2020, 10:51:32 AM</span>
+	<span class='label end-time'>Feb 12, 2020, 10:52:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+567ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1  pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Pesquisar um produto com sucesso atraves da home page do aplicativo</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:26 PM</span>
-						<span class='node-duration'>0h 0m 18s+825ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:32 AM</span>
+						<span class='node-duration'>0h 0m 13s+817ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Dado que escolho uma categoria de produto</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:26 PM</span>
-						<span class='node-duration'>0h 0m 14s+685ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:32 AM</span>
+						<span class='node-duration'>0h 0m 10s+609ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -573,7 +529,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:15:41 PM</td>
+													<td class='timestamp'>10:51:43 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -584,8 +540,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando escolher um produto</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:41 PM</span>
-						<span class='node-duration'>0h 0m 3s+601ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:43 AM</span>
+						<span class='node-duration'>0h 0m 2s+818ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -601,7 +557,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:15:44 PM</td>
+													<td class='timestamp'>10:51:45 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -612,8 +568,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Entao confirmar se o produto foi selecionado</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:44 PM</span>
-						<span class='node-duration'>0h 0m 0s+537ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:45 AM</span>
+						<span class='node-duration'>0h 0m 0s+387ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -629,13 +585,13 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:15:45 PM</td>
+													<td class='timestamp'>10:51:46 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_atraves_da_home_page_do_aplicativo11_02_2020 23.15.46.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_atraves_da_home_page_do_aplicativo11_02_2020 23.15.46.png'></li>
+												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_atraves_da_home_page_do_aplicativo12_02_2020 10.51.46.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_atraves_da_home_page_do_aplicativo12_02_2020 10.51.46.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -645,16 +601,16 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-1  pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Pesquisar um produto com sucesso porem colocar especificacoes que nao existe para nenhum</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:47 PM</span>
-						<span class='node-duration'>0h 0m 24s+420ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:47 AM</span>
+						<span class='node-duration'>0h 0m 22s+381ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Dado que escolho uma categoria de produto</div>						
-						<span class='node-time'>Feb 11, 2020 11:15:47 PM</span>
-						<span class='node-duration'>0h 0m 14s+160ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:47 AM</span>
+						<span class='node-duration'>0h 0m 11s+934ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -670,7 +626,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:01 PM</td>
+													<td class='timestamp'>10:51:59 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -681,8 +637,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando escolher as especificacoes</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:01 PM</span>
-						<span class='node-duration'>0h 0m 9s+626ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:51:59 AM</span>
+						<span class='node-duration'>0h 0m 9s+811ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -698,7 +654,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:11 PM</td>
+													<td class='timestamp'>10:52:09 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -709,8 +665,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='22'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Entao confirmar que nao apareca nenhum resultado</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:11 PM</span>
-						<span class='node-duration'>0h 0m 0s+632ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:09 AM</span>
+						<span class='node-duration'>0h 0m 0s+633ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -726,13 +682,13 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:11 PM</td>
+													<td class='timestamp'>10:52:10 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_porem_colocar_especificacoes_que_nao_existe_para_nenhum11_02_2020 23.16.11.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_porem_colocar_especificacoes_que_nao_existe_para_nenhum11_02_2020 23.16.11.png'></li>
+												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_porem_colocar_especificacoes_que_nao_existe_para_nenhum12_02_2020 10.52.10.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_um_produto_com_sucesso_porem_colocar_especificacoes_que_nao_existe_para_nenhum12_02_2020 10.52.10.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -744,33 +700,33 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				</li>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='23'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='23'>
 					<div class='test-heading'>
 						<span class='test-name'>Pesquisar produto pela lupa</span>
-						<span class='test-time'>Feb 11, 2020 11:16:12 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Feb 12, 2020, 10:52:11 AM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Feb 11, 2020 11:16:12 PM</span>
-	<span class='label end-time'>Feb 11, 2020 11:16:44 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+280ms</span>
+	<span class='label start-time'>Feb 12, 2020, 10:52:11 AM</span>
+	<span class='label end-time'>Feb 12, 2020, 10:52:38 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+388ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1  pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Pesquisar um produto utilizando a lupa e selecionar o mesmo</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:12 PM</span>
-						<span class='node-duration'>0h 0m 15s+762ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:11 AM</span>
+						<span class='node-duration'>0h 0m 14s+85ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Dado que estou na home do app</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:12 PM</span>
-						<span class='node-duration'>0h 0m 10s+708ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:11 AM</span>
+						<span class='node-duration'>0h 0m 8s+313ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -786,7 +742,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:23 PM</td>
+													<td class='timestamp'>10:52:19 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -797,8 +753,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='26'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando pesquiso algum produto pela lupa</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+860ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:19 AM</span>
+						<span class='node-duration'>0h 0m 3s+679ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -814,7 +770,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:26 PM</td>
+													<td class='timestamp'>10:52:23 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -825,8 +781,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='27'>
 					<div class='collapsible-header'>
 						<div class='node-name'>E seleciono algum dos que apareceu</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:26 PM</span>
-						<span class='node-duration'>0h 0m 1s+625ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:23 AM</span>
+						<span class='node-duration'>0h 0m 1s+724ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -842,7 +798,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:28 PM</td>
+													<td class='timestamp'>10:52:24 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -853,8 +809,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='28'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Entao confirmo se o mesmo foi selecionado</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:28 PM</span>
-						<span class='node-duration'>0h 0m 0s+565ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:24 AM</span>
+						<span class='node-duration'>0h 0m 0s+367ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -870,32 +826,32 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:28 PM</td>
+													<td class='timestamp'>10:52:25 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_um_produto_utilizando_a_lupa_e_selecionar_o_mesmo11_02_2020 23.16.29.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_um_produto_utilizando_a_lupa_e_selecionar_o_mesmo11_02_2020 23.16.29.png'></li>
+												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_um_produto_utilizando_a_lupa_e_selecionar_o_mesmo12_02_2020 10.52.25.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_um_produto_utilizando_a_lupa_e_selecionar_o_mesmo12_02_2020 10.52.25.png'></li>
 										</ul>
 								</div>
 						</div>
 				</li>
 						</ul>
 				</li>
-				<li class='node level-1  fail' status='fail' test-id='29'>
+				<li class='node level-1  pass' status='pass' test-id='29'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Scenario: Pesquisar algum produto que nao existe na loja</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:30 PM</span>
-						<span class='node-duration'>0h 0m 14s+93ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:26 AM</span>
+						<span class='node-duration'>0h 0m 12s+231ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='30'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Dado que estou na home do app</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:30 PM</span>
-						<span class='node-duration'>0h 0m 10s+519ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:26 AM</span>
+						<span class='node-duration'>0h 0m 8s+393ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -911,7 +867,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:40 PM</td>
+													<td class='timestamp'>10:52:34 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -922,8 +878,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 				<li class='node level-2 leaf pass' status='pass' test-id='31'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Quando pesquiso um produto inexistente</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:40 PM</span>
-						<span class='node-duration'>0h 0m 3s+354ms</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:34 AM</span>
+						<span class='node-duration'>0h 0m 2s+683ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -939,7 +895,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>11:16:43 PM</td>
+													<td class='timestamp'>10:52:37 AM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -947,12 +903,12 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf fail' status='fail' test-id='32'>
+				<li class='node level-2 leaf pass' status='pass' test-id='32'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Entao confirmo se me retorna nenhum produto</div>						
-						<span class='node-time'>Feb 11, 2020 11:16:43 PM</span>
-						<span class='node-duration'>0h 0m 0s+218ms</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='node-time'>Feb 12, 2020, 10:52:37 AM</span>
+						<span class='node-duration'>0h 0m 1s+154ms</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -965,22 +921,15 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>11:16:44 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at br.com.rsinet.hub_BDD.PageFactory.PesquisaLupa.nenhumResultado(PesquisaLupa.java:51)
-	at br.com.rsinet.hub_BDD.StepDefinition.PesquisaLupa_stepDefinition.confirmo_se_me_retorna_nenhum_produto(PesquisaLupa_stepDefinition.java:49)
-	at ?.Entao confirmo se me retorna nenhum produto(PesquisaLupa.feature:17)
-</pre></td>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>10:52:38 AM</td>
+													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
 									</table>
 										<ul class='screenshots'>
-												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_algum_produto_que_nao_existe_na_loja11_02_2020 23.16.44.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\MeuProjeto\AdvShopMobileBDD/target/report/Pesquisar_algum_produto_que_nao_existe_na_loja11_02_2020 23.16.44.png'></li>
+												<li><img data-featherlight='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_algum_produto_que_nao_existe_na_loja12_02_2020 10.52.38.png' width='10%' src='' data-src='C:\Users\matheus.vieira\Desktop\Apresentar\AdvShopMobileBDD/target/report/Pesquisar_algum_produto_que_nao_existe_na_loja12_02_2020 10.52.38.png'></li>
 										</ul>
 								</div>
 						</div>
@@ -1043,13 +992,13 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 					<div class='category-heading'>
 						<span class='category-name'>@CadastrarComSucesso</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1064,9 +1013,9 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 11:13:34 PM</td>
+										<td>Feb 12, 2020, 10:50:03 AM</td>
 										<td class='linked' test-id='2'>Cadastrar um usuario.Scenario: Cadastrar um usuario com sucesso</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1098,7 +1047,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 11:14:34 PM</td>
+										<td>Feb 12, 2020, 10:50:49 AM</td>
 										<td class='linked' test-id='8'>Cadastrar um usuario.Scenario: Desmarcar a opcao de confirmar os termos de cadastro e tentar finalizar o cadastro</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1132,7 +1081,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 11:15:26 PM</td>
+										<td>Feb 12, 2020, 10:51:32 AM</td>
 										<td class='linked' test-id='15'>Pesquisar produto atraves da home page.Scenario: Pesquisar um produto com sucesso atraves da home page do aplicativo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1166,7 +1115,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 11:15:47 PM</td>
+										<td>Feb 12, 2020, 10:51:47 AM</td>
 										<td class='linked' test-id='19'>Pesquisar produto atraves da home page.Scenario: Pesquisar um produto com sucesso porem colocar especificacoes que nao existe para nenhum</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1200,7 +1149,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 11:16:12 PM</td>
+										<td>Feb 12, 2020, 10:52:11 AM</td>
 										<td class='linked' test-id='24'>Pesquisar produto pela lupa.Scenario: Pesquisar um produto utilizando a lupa e selecionar o mesmo</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1213,13 +1162,13 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 					<div class='category-heading'>
 						<span class='category-name'>@FalharAoPesquisarProdutoLupa</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -1234,9 +1183,9 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 11, 2020 11:16:30 PM</td>
+										<td>Feb 12, 2020, 10:52:26 AM</td>
 										<td class='linked' test-id='29'>Pesquisar produto pela lupa.Scenario: Pesquisar algum produto que nao existe na loja</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1254,75 +1203,7 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-					<i class='material-icons'>search</i> Search
-				</a>
-				
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-				
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-
-	<div class='subview-left left'>
-		
-		<div class='view-summary'>
-			<h5>Exceptions</h3>
-			<ul id='exception-collection' class='exception-collection'>
-				
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>	
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 11, 2020 11:16:30 PM</td>
-										<td class='linked' test-id='29'>Pesquisar produto pela lupa.Scenario: Pesquisar algum produto que nao existe na loja</td>
-										<td><pre><pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at br.com.rsinet.hub_BDD.PageFactory.PesquisaLupa.nenhumResultado(PesquisaLupa.java:51)
-	at br.com.rsinet.hub_BDD.StepDefinition.PesquisaLupa_stepDefinition.confirmo_se_me_retorna_nenhum_produto(PesquisaLupa_stepDefinition.java:49)
-	at ?.Entao confirmo se me retorna nenhum produto(PesquisaLupa.feature:17)
-</pre></pre></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -1342,19 +1223,19 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 11, 2020 11:13:34 PM</div>
+					<div class='panel-lead'>Feb 12, 2020, 10:50:03 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 11, 2020 11:16:45 PM</div>
+			 		<div class='panel-lead'>Feb 12, 2020, 10:52:39 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>190,883ms</div>
+					<div class='panel-lead'>156,116ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1370,8 +1251,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 						</tr>
 						<tr>
 							<td>@CadastrarComSucesso</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
@@ -1400,8 +1281,8 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 						</tr>
 						<tr>
 							<td>@FalharAoPesquisarProdutoLupa</td>
-							<td>0</td>
 							<td>1</td>
+							<td>0</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -1416,22 +1297,22 @@ Session ID: 59b1b639-6d9b-452d-9f84-20c20b4f3974
 
 		<script>
 			var statusGroup = {
-				passParent: 20,
-				failParent: 2,
+				passParent: 23,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 1,
-				exceptionsParent: 3,
+				skipParent: 0,
+				exceptionsParent: 0,
 				
-				passChild: 20,
-				failChild: 2,
+				passChild: 23,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 1,
+				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 3,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

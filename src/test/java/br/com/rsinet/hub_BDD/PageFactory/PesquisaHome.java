@@ -81,6 +81,7 @@ public class PesquisaHome {
 		aplicar.click();
 	}
 	public void nenhumResultado() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		boolean nenhumResults = driver.getPageSource().contains("No results");
 		assertTrue(nenhumResults);
 	}

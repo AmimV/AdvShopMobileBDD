@@ -2,6 +2,10 @@ package br.com.rsinet.hub_BDD.PageFactory;
 
 
 import static org.junit.Assert.assertTrue;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import br.com.rsinet.hub_BDD.Excel.MassaDeDadosNovaConta;
+import br.com.rsinet.hub_BDD.Utils.GeradorDeUsuario;
 import br.com.rsinet.hub_BDD.Utils.Rolagem;
 
 public class Criar_Conta {
@@ -17,6 +22,8 @@ public class Criar_Conta {
 	private WebDriverWait wait;
 	private MassaDeDadosNovaConta celula;
 	private Rolagem util;
+	private GeradorDeUsuario gerar;
+	private String getUser;
 
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/imageViewMenu")
 	private WebElement menu;	
@@ -72,7 +79,7 @@ public class Criar_Conta {
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/textViewMenuUser")
 	private WebElement usuarioLogado;
 
-	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/checkBoxRecieveOffers")
+	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/checkBoxAgreeConditions")
 	private WebElement termos;
 
 	public Criar_Conta(WebDriver driver) {
@@ -81,6 +88,8 @@ public class Criar_Conta {
 		wait = new WebDriverWait(this.driver, 10);
 		celula = new MassaDeDadosNovaConta();
 		util = new Rolagem(driver);
+		gerar = new GeradorDeUsuario();
+
 	}
 
 	public void NovaConta() throws Exception {
@@ -91,8 +100,10 @@ public class Criar_Conta {
 	public void Usuario() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(userName));
 		userName.click();
-		userName.sendKeys(celula.Usuario());
-
+		userName.sendKeys(gerar.gerador(5));
+	}
+	public void getUser() {
+		getUser = userName.getText();
 	}
 
 	public void Email() throws Exception {
@@ -165,6 +176,10 @@ public class Criar_Conta {
 	public void AssertErro() {
 		boolean register = driver.getPageSource().contains("REGISTER");
 		assertTrue(register);
+	}
+	public void confirmaCadastro() throws Exception {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Assert.assertEquals(usuarioLogado.getText(), getUser);
 	}
 
 }

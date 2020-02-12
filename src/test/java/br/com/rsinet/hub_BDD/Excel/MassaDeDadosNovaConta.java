@@ -2,15 +2,8 @@ package br.com.rsinet.hub_BDD.Excel;
 
 public class MassaDeDadosNovaConta {
 
-	
-	
-	public String Usuario() throws Exception {
-		ExcelUtils.setExcelFile(Diretorio.Path_TestData + Diretorio.File_TestData, "Contas");
-		String nome = ExcelUtils.getCellData(1, 0);
-		return nome;
-	}
-
 	public String Email() throws Exception {
+		ExcelUtils.setExcelFile(Diretorio.Path_TestData + Diretorio.File_TestData, "Contas");
 		String email = ExcelUtils.getCellData(1, 1);
 		return email;
 	}

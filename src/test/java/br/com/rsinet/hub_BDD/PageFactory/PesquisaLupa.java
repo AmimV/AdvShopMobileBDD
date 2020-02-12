@@ -27,6 +27,9 @@ public class PesquisaLupa {
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/RelativeLayoutProductControl")
 	private WebElement headSetLogiTech;
 	
+	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/textViewNoProductsToShow")
+	private WebElement noresult;
+	
 	public PesquisaLupa(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -46,8 +49,8 @@ public class PesquisaLupa {
 	}
 
 	public void nenhumResultado() throws InterruptedException {
+		wait.until(ExpectedConditions.textToBePresentInElement(noresult, "No results"));
 		boolean nenhumResults = driver.getPageSource().contains("No results");
-		driver.manage().timeouts().equals(nenhumResults);
 		Assert.assertTrue(nenhumResults);
 	}
 }
