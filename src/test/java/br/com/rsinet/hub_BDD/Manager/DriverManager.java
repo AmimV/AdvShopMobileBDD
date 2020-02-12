@@ -34,8 +34,7 @@ public class DriverManager {
 		caps.setCapability("appPackage", configFileReader.getAppPackage());
 		caps.setCapability("appActivity", configFileReader.getAppActivity());
 		caps.setCapability("unicodeKeyboard", true);   
-	      caps.setCapability("resetKeyboard", true);
-//	      URL url = new URL("http://127.0.0.1:4723/wd/hub");
+        caps.setCapability("resetKeyboard", true);
 
 	      if(driver ==null )
 	    	  

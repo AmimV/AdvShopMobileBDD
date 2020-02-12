@@ -43,6 +43,9 @@ public class PesquisaHome {
 
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/RelativeLayoutProductControl")
 	private WebElement hpElite;
+
+	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/imageViewProduct")
+	private WebElement waitProduto;
 	
 	public PesquisaHome(WebDriver driver) {
 		this.driver = driver;
@@ -53,7 +56,7 @@ public class PesquisaHome {
 	}
 
 	public void escolhaProduto() throws Exception {
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.elementToBeClickable(waitProduto));
 		util.clicaTexto(celula.produto());
 	}
 
