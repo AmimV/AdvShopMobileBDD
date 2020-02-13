@@ -49,8 +49,7 @@ public class PesquisaLupa {
 	}
 
 	public void nenhumResultado() throws InterruptedException {
-		wait.until(ExpectedConditions.textToBePresentInElement(noresult, "No results"));
-		boolean nenhumResults = driver.getPageSource().contains("No results");
-		Assert.assertTrue(nenhumResults);
+		boolean nenhumResults = wait.until(ExpectedConditions.textToBePresentInElement(noresult, "No results"));
+		assertTrue(nenhumResults);
 	}
 }

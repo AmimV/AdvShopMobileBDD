@@ -4,6 +4,7 @@ package br.com.rsinet.hub_BDD.PageFactory;
 import static org.junit.Assert.assertTrue;
 import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,6 +48,9 @@ public class PesquisaHome {
 	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/imageViewProduct")
 	private WebElement waitProduto;
 	
+	@FindBy(how = How.ID, using = "com.Advantage.aShopping:id/textViewNoProductsToShow")
+	private WebElement waitNenhumResults;
+	
 	public PesquisaHome(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -84,8 +88,7 @@ public class PesquisaHome {
 		aplicar.click();
 	}
 	public void nenhumResultado() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		boolean nenhumResults = driver.getPageSource().contains("No results");
+		boolean nenhumResults = wait.until(ExpectedConditions.textToBePresentInElement(waitNenhumResults, "No results"));
 		assertTrue(nenhumResults);
 	}
 }
